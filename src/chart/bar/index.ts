@@ -1,5 +1,4 @@
-import GCharts, { ChartGlobalOptions } from "../..";
-import { uuid } from "../../utils/helpers";
+import GCharts from "../..";
 import {
   calculateDrawingHeight,
   calculateOffset,
@@ -8,17 +7,16 @@ import {
   getValueBounds,
 } from "../../core/calc";
 import GraphicAnimation from "../../core/animation";
-import { BarChartOptions } from "../../type/config";
+import { ChartGlobalOptions } from "../../type/config";
 import { BaseChart } from "../baseChart";
+import Scale from "../../component/scale/scale";
+import { BarChartOptions } from "../../type/barType";
+import { BaseData } from "../../type";
 
-export interface BarData {
-  labels: string[];
-  datasets: Array<any>;
-}
-export type ChartOptions = BarChartOptions & ChartGlobalOptions;
+
+type BarOption = BarChartOptions & ChartGlobalOptions;
 export class Bar extends BaseChart {
   defaultConfig: BarChartOptions = {
-    scaleOverlay: false,
     scaleOverride: false,
     scaleSteps: null,
     scaleStepWidth: null,
@@ -31,29 +29,27 @@ export class Bar extends BaseChart {
     scaleFontSize: 12,
     scaleFontStyle: "normal",
     scaleFontColor: "#666",
-    scaleShowGridLines: true,
+    scaleShowGridLines: false,
     scaleGridLineColor: "rgba(0,0,0,.05)",
     scaleGridLineWidth: 1,
-    barShowStroke: true,
+    barShowStroke: false,
     barStrokeWidth: 2,
     barValueSpacing: 5,
-    barDatasetSpacing: 1,
-    animation: false,
+    barDatasetSpacing: 2,
+    animation: true,
     animationSteps: 60,
     animationEasing: "easeOutQuart",
-    onAnimationComplete: () => {},
     axisPointer: {
       show: true,
-      lineStyle: {
-        color: "#000",
-        width: 1,
-      },
+      fontSize: 14,
+      lineStyle:"#999",
+      color: "#fff",
+      background: "#B4B4B4"
     },
   };
-  options: BarChartOptions & ChartGlobalOptions;
+  _options: BarChartOptions & ChartGlobalOptions;
   chart: GCharts;
-  datasets: BarData;
-  id: string;
+  datasets: BaseData;
   barAttr = {
     valueHop: 0,
     yAxisPosX: 0,
@@ -72,27 +68,35 @@ export class Bar extends BaseChart {
     },
   };
   animation: GraphicAnimation | null = null;
-  constructor(data: BarData, options: Partial<ChartOptions>, chart: GCharts) {
+  scale: Scale;
+  constructor(data: BaseData, options: Partial<BarOption>, chart: GCharts) {
     super(chart);
     this.datasets = data;
-    this.options = {
+    this._options = {
       ...chart.default.global,
       ...this.defaultConfig,
       ...options,
     };
     this.chart = chart;
-    this.id = uuid();
-    if (this.options.responsive) {
-      this.chart.resize();
-    }
-    this.calcBar(data, this.options);
+    // if (this.options.responsive) {
+    //   this.chart.resize();
+    // }
+    this.scale = new Scale(this.chart, this);
+    this.calcBar(data, this._options);
     this.injectContext(this);
-    this.axisPointer()
   }
- 
-  calcBar(data: BarData, options: ChartOptions) {
+  setOption(data: BaseData, options: Partial<BarOption>,){
+    this.datasets = data;
+    this._options = {
+      ...this.chart.default.global,
+      ...this.defaultConfig,
+      ...options,
+    };
+    this.calcBar(data, this._options);
+  }
+  calcBar(data: BaseData, options: BarOption) {
     const { labelHeight, widestXLabel, scaleHeight, rotateLabels } =
-      calculateDrawingHeight(data, this.chart, this.options);
+      calculateDrawingHeight(data, this.chart, this._options);
     const valueBounds = getValueBounds(data, scaleHeight, labelHeight);
     // label模板
     const labelTemplateString = options.scaleShowLabels
@@ -115,7 +119,7 @@ export class Bar extends BaseChart {
           data,
           scaleHeight,
         },
-        this.options,
+        this._options,
         this.chart
       );
     this.barAttr = {
@@ -131,15 +135,15 @@ export class Bar extends BaseChart {
       scaleHeight
     };
     this.animation = new GraphicAnimation(this.chart, {
-      config: this.options,
+      config: this._options,
       drawData: this.drawBars,
-      drawScale: this.drawScale,
+      drawScale: this.scale.drawScale,
     });
   }
 
   drawBars = (percent: number) => {
     const { ctx } = this.chart;
-    const config = this.options;
+    const config = this._options;
     const data = this.datasets;
     const {
       valueHop,
@@ -195,96 +199,8 @@ export class Bar extends BaseChart {
       }
     }
   };
-  drawScale = () => {
-    const { ctx, width } = this.chart;
-    const config = this.options;
-    const data = this.datasets;
-    const {
-      widestXLabel,
-      xAxisPosY,
-      yAxisPosX,
-      xAxisLength,
-      rotateLabels,
-      valueHop,
-      calculatedScale,
-      scaleHop,
-    } = this.barAttr;
-    //X axis line
-    ctx.lineWidth = config.scaleLineWidth;
-    ctx.strokeStyle = config.scaleLineColor;
-    ctx.beginPath();
-    ctx.moveTo(width - widestXLabel / 2 + 5, xAxisPosY);
-    ctx.lineTo(width - widestXLabel / 2 - xAxisLength - 5, xAxisPosY);
-    ctx.stroke();
-
-    if (rotateLabels > 0) {
-      ctx.save();
-      ctx.textAlign = "right";
-    } else {
-      ctx.textAlign = "center";
-    }
-    ctx.fillStyle = config.scaleFontColor;
-    for (var i = 0; i < data.labels.length; i++) {
-      ctx.save();
-      if (rotateLabels > 0) {
-        ctx.translate(
-          yAxisPosX + i * valueHop,
-          xAxisPosY + config.scaleFontSize
-        );
-        ctx.rotate(-(rotateLabels * (Math.PI / 180)));
-        ctx.fillText(data.labels[i], 0, 0);
-        ctx.restore();
-      } else {
-        ctx.fillText(
-          data.labels[i],
-          yAxisPosX + i * valueHop + valueHop / 2,
-          xAxisPosY + config.scaleFontSize + 3
-        );
-      }
-
-      ctx.beginPath();
-      ctx.moveTo(yAxisPosX + (i + 1) * valueHop, xAxisPosY + 3);
-      //Check i isnt 0, so we dont go over the Y axis twice.
-      ctx.lineWidth = config.scaleGridLineWidth;
-      ctx.strokeStyle = config.scaleGridLineColor;
-      ctx.lineTo(yAxisPosX + (i + 1) * valueHop, 5);
-      ctx.stroke();
-    }
-
-    //Y axis
-    ctx.lineWidth = config.scaleLineWidth;
-    ctx.strokeStyle = config.scaleLineColor;
-    ctx.beginPath();
-    ctx.moveTo(yAxisPosX, xAxisPosY);
-    ctx.lineTo(yAxisPosX, 14);
-    ctx.stroke();
-
-    ctx.textAlign = "right";
-    ctx.textBaseline = "middle";
-    for (var j = 0; j < calculatedScale.steps; j++) {
-      ctx.beginPath();
-      ctx.moveTo(yAxisPosX - 3, xAxisPosY - (j + 1) * scaleHop);
-      if (config.scaleShowGridLines) {
-        ctx.lineWidth = config.scaleGridLineWidth;
-        ctx.strokeStyle = config.scaleGridLineColor;
-        ctx.lineTo(yAxisPosX + xAxisLength + 5, xAxisPosY - (j + 1) * scaleHop);
-      } else {
-        ctx.lineTo(yAxisPosX - 0.5, xAxisPosY - (j + 1) * scaleHop);
-      }
-
-      ctx.stroke();
-      if (config.scaleShowLabels) {
-        // console.log("text",xAxisPosY - (j + 1) * scaleHop,calculatedScale.labels[j])
-        ctx.fillText(
-          calculatedScale.labels[j],
-          yAxisPosX - 8,
-          xAxisPosY - (j + 1) * scaleHop
-        );
-      }
-    }
-  };
   render() {
-    this.drawScale();
+    this.scale.drawScale();
     this.drawBars(1);
   }
 }

@@ -1,13 +1,13 @@
 import GCharts from "..";
-import { BarData } from "../chart/bar";
-import { BarChartOptions } from "../type/config";
+import { BaseData } from "../type";
+import { BaseChartOpts } from "../type/config";
 import { CapValue } from "./animation";
 
 //计算实际绘图高度
 export function calculateDrawingHeight(
   data: any,
   global: GCharts,
-  config: BarChartOptions
+  config: BaseChartOpts
 ) {
   const { height, width, ctx } = global;
   let maxSize = height;
@@ -51,7 +51,7 @@ export function calculateDrawingHeight(
 }
 //求出最大值最小值和对应步数
 export function getValueBounds(
-  data: BarData,
+  data: BaseData,
   scaleHeight: number,
   labelHeight: number
 ) {
@@ -128,9 +128,9 @@ export function calculateScale(
   return {
     steps: numberOfSteps, // 刻度数量
     stepValue: stepValue, // 步长 增量数据
-    graphMin: graphMin, // 最小值
+    graphMin, // 最小值
     graphMax,
-    labels: labels, // 刻度标签
+    labels, // 刻度标签
   };
 }
 export function populateLabels(
@@ -145,8 +145,8 @@ export function populateLabels(
     for (let i = 1; i < numberOfSteps + 1; i++) {
       labels.push(
         tmpl(labelTemplateString, {
-          value: (graphMin + stepValue * i).toFixed(
-            getDecimalPlaces(stepValue)
+          value: Math.floor(Number((graphMin + stepValue * i).toFixed(
+            getDecimalPlaces(stepValue)))
           ),
         })
       );
@@ -210,15 +210,31 @@ export function calculateOffset(val:number,calculatedScale:calcYScale,scaleHop:n
     const scalingFactor = CapValue(adjustedValue/outerValue,1,0) as number;
     return (scaleHop*calculatedScale.steps) * scalingFactor;
 }
-
-export const  calculateXAxisSize = (
+/**
+ * @returns valueHop  //刻度间隔
+ * @returns yAxisPosX  // Y 轴在水平方向的位置
+ *  @returns xAxisPosY  //  X 轴在垂直方向的位置
+ * @returns barWidth  // 柱子宽度
+ * @returns widestXLabel 最宽的文字
+ * @returns xAxisLength X轴长度
+ */
+export const calculateXAxisSize = (
   labels: string[],
   {
     widestXLabel,
     data,
     scaleHeight,
-  }: { widestXLabel: number; data: BarData; scaleHeight: number },
-  options: BarChartOptions,
+  }: { widestXLabel: number; data: BaseData; scaleHeight: number },
+  options: {
+    scaleShowLabels: boolean;
+    scaleFontStyle: string;
+    scaleFontSize: number;
+    scaleFontFamily: string;
+    scaleGridLineWidth: number;
+    barValueSpacing: number;
+    barDatasetSpacing: number;
+    barStrokeWidth: number;
+  },
   chart:GCharts
 )=> {
   const { ctx, width } = chart;
@@ -250,10 +266,10 @@ export const  calculateXAxisSize = (
   const yAxisPosX = width - widestXLabel / 2 - xAxisLength;
   const xAxisPosY = scaleHeight + config.scaleFontSize / 2;
   return {
-    valueHop,
-    yAxisPosX,
-    xAxisPosY,
-    barWidth,
+    valueHop, //刻度间隔
+    yAxisPosX, // Y 轴在水平方向的位置
+    xAxisPosY, //  X 轴在垂直方向的位置
+    barWidth, // 柱子宽度
     widestXLabel,
     xAxisLength,
   };

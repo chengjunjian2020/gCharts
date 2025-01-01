@@ -2,6 +2,7 @@ import GCharts from "..";
 import { ChartOptions } from "../chart/bar";
 import { animationOptions, easeFn } from "../common/ease";
 import { isNumber } from "../utils/number";
+
 export function CapValue(
   valueToCap: number,
   maxValue: number | null,
@@ -41,7 +42,7 @@ export default class GraphicAnimation {
     this.easingFunction =
       animationOptions[config.animationEasing as keyof typeof animationOptions];
     this.percentAnimComplete = config.animation ? 0 : 1;
-
+    console.log(config)
     requestAnimationFrame(()=>{
       this.animLoop()
     });
@@ -67,13 +68,8 @@ export default class GraphicAnimation {
       ? this.CapValue(this.easingFunction(this.percentAnimComplete), null, 0)
       : 1;
     this._chart.clear();
-    if (config.scaleOverlay) {
-      drawData(easeAdjustedAnimationPercent as number);
+    drawData(easeAdjustedAnimationPercent as number);
       this.opts.drawScale();
-    } else {
-      this.opts.drawScale();
-      drawData(easeAdjustedAnimationPercent as number);
-    }
   }
   CapValue(valueToCap: number,
     maxValue: number | null,
