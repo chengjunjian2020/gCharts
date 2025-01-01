@@ -4,7 +4,7 @@ export default {
     // 站点级选项
     title: 'G-Chart',
     description: '自定义基础图表',
-  
+    base:"repo",
     themeConfig: {
       sidebar: [
         {
