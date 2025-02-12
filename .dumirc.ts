@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const repo = 'keepcharts'
+const repo = 'advanced-charts'
 
 export default defineConfig({
   outputPath: 'docs-dist',
