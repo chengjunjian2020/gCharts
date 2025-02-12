@@ -1,0 +1,17 @@
+.chart-container {
+  width: 750px;
+  height: 500px;
+  border: 1px solid #eee;
+}
+
+.option-input {
+  padding: 10px;
+  font-family: Consolas;
+  width: 500px;
+  height: 500px;
+  resize: none;
+}
+
+.side-tab:hover {
+  color: #e90808;
+}
