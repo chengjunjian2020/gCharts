@@ -13,7 +13,7 @@ order: 7
 # Text 文字
 
 ```tsx
-import { Stage, Text } from 'g-charts';
+import { Stage, Text } from 'advanced-charts';
 
 function App() {
   return (

@@ -16,7 +16,7 @@ order: 11
 /**
  * defaultShowCode: true
  */
-import { PieChart } from 'g-charts'
+import { PieChart } from 'advanced-charts'
 
 const App = () => {
   const 饼图 = {

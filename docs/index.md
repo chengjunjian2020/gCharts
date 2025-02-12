@@ -1,6 +1,6 @@
 ---
 hero:
-  title: g-charts
+  title: advanced-charts
   description: 专为 react 定制的高性能图形与图表组件库
   actions:
     - text: 指南
@@ -11,7 +11,7 @@ features:
   - title: 上手简单
     emoji: 💎
     description: 上手成本低，使用友好。不需要花费太长时间，即学即用，一行代码轻松绘制出完整图表模块
-  - title: gCharts 生态
+  - title: advanced-charts 生态
     emoji: 🌈
     description: 基于react 框架扩展，支持在 react 中无缝使用，内置了常用的图表组件
   - title: '高性能'

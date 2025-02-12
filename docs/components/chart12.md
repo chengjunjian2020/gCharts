@@ -16,7 +16,7 @@ order: 12
 /**
  * defaultShowCode: true
  */
-import { PieChart } from 'g-charts'
+import { PieChart } from 'advanced-charts'
 
 const App = () => {
   const 环形 = {

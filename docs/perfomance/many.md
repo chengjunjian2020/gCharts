@@ -8,14 +8,14 @@ toc: content
 
 # 10000 个元素
 
-`g-charts` 可以轻松支持 10000+ 元素同时动画的流畅执行。性能表现优异。
+`advanced-charts` 可以轻松支持 10000+ 元素同时动画的流畅执行。性能表现优异。
 
 ```tsx
 /**
  * inline: true
  */
 import { useEffect, useRef, useState } from 'react';
-import { Rect, Stage, Animator } from 'g-charts';
+import { Rect, Stage, Animator } from 'advanced-charts';
 
 const rectCount = 4000;
 

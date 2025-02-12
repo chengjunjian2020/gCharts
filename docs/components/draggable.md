@@ -14,7 +14,7 @@ order: 2
 设置 `draggable` 属性即可拖拽
 
 ```tsx
-import { Circle, Stage } from 'g-charts';
+import { Circle, Stage } from 'advanced-charts';
 
 const App = () => {
   return (
@@ -39,7 +39,7 @@ export default App;
 只可横向 或 纵向 拖拽
 
 ```tsx
-import { Rect, Circle, Stage } from 'g-charts';
+import { Rect, Circle, Stage } from 'advanced-charts';
 
 const App = () => {
   return (
@@ -71,7 +71,7 @@ export default App;
 ## 成组拖拽
 
 ```tsx
-import { Group, Rect, Circle, Stage } from 'g-charts';
+import { Group, Rect, Circle, Stage } from 'advanced-charts';
 
 const App = () => {
   return (

@@ -16,7 +16,7 @@ order: 7
 /**
  * defaultShowCode: true
  */
-import { LineChart } from 'g-charts'
+import { LineChart } from 'advanced-charts'
 
 const App = () => {
   const 拐角图 = {

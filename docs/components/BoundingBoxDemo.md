@@ -10,7 +10,7 @@ order: 5
 # 包围盒
 
 ```tsx
-import { Rect, Stage, Circle } from 'g-charts';
+import { Rect, Stage, Circle } from 'advanced-charts';
 
 const BoundingBoxDemo = () => {
   function getBoundingBox(circleData) {

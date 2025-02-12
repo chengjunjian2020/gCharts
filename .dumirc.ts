@@ -5,7 +5,7 @@ const repo = 'keepcharts'
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: {
-    name: 'gCharts',
+    name: 'advanced-charts',
     logo: process.env.NODE_ENV === 'production' ? `/${repo}/logo.png` : '/logo.png'
   },
   externals: {

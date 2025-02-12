@@ -17,7 +17,7 @@ order: 2
  * inline: true
  */
 import { useState } from 'react';
-import { BoxHidden, Circle, Group, Rect, Stage, Text } from 'g-charts';
+import { BoxHidden, Circle, Group, Rect, Stage, Text } from 'advanced-charts';
 import colorAlpha from 'color-alpha';
 
 const App = () => {
@@ -144,7 +144,7 @@ export default App;
 
 ```tsx | pure
 import { useState } from 'openinula';
-import { BoxHidden, Circle, Group, Rect, Stage, Text } from 'g-charts';
+import { BoxHidden, Circle, Group, Rect, Stage, Text } from 'advanced-charts';
 import colorAlpha from 'color-alpha';
 
 const App = () => {

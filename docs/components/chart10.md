@@ -16,7 +16,7 @@ order: 10
 /**
  * defaultShowCode: true
  */
-import { BarChart } from 'g-charts'
+import { BarChart } from 'advanced-charts'
 
 const App = () => {
   const 底色柱状图 = {

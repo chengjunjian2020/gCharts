@@ -16,7 +16,7 @@ order: 6
 
 ```tsx | inline
 import { useEffect, useRef } from 'react';
-import { Stage, Rect } from 'g-charts/render';
+import { Stage, Rect } from 'advanced-charts/render';
 
 const App = () => {
   const canvasRef = useRef<HTMLDivElement>(null);

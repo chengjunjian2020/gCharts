@@ -30,6 +30,9 @@ importers:
       '@umijs/lint':
         specifier: ^4.0.0
         version: 4.4.4(eslint@8.57.1)(stylelint@14.16.1)(typescript@5.4.2)
+      advanced-charts:
+        specifier: file:./advanced-charts
+        version: file:advanced-charts
       dumi:
         specifier: ^2.2.13
         version: 2.4.18(@babel/core@7.26.8)(@swc/helpers@0.5.1)(@types/node@20.5.1)(@types/react@18.3.18)(eslint@8.57.1)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(stylelint@14.16.1)(terser@5.38.2)(type-fest@1.4.0)(typescript@5.4.2)(webpack@5.97.1(@swc/core@1.9.2(@swc/helpers@0.5.1)))
@@ -39,9 +42,6 @@ importers:
       father:
         specifier: ^4.1.0
         version: 4.5.3(@babel/core@7.26.8)(@types/node@20.5.1)(styled-components@6.1.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.97.1(@swc/core@1.9.2(@swc/helpers@0.5.1)))
-      g-charts:
-        specifier: file:./g-charts
-        version: file:g-charts
       gh-pages:
         specifier: ^6.1.1
         version: 6.3.0
@@ -1930,6 +1930,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  advanced-charts@file:advanced-charts:
+    resolution: {directory: advanced-charts, type: directory}
+
   ajv-draft-04@1.0.0:
     resolution: {integrity: sha512-mv00Te6nmYbRp5DCwclxtt7yV/joXJPGS7nM+97GdxvuttCOfgI3K4U25zboyeX0O+myI8ERluxQe5wljMmVIw==}
     peerDependencies:
@@ -3360,9 +3363,6 @@ packages:
 
   functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
-
-  g-charts@file:g-charts:
-    resolution: {directory: g-charts, type: directory}
 
   gensync@1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
@@ -8690,6 +8690,8 @@ snapshots:
 
   acorn@8.14.0: {}
 
+  advanced-charts@file:advanced-charts: {}
+
   ajv-draft-04@1.0.0(ajv@8.13.0):
     optionalDependencies:
       ajv: 8.13.0
@@ -10599,8 +10601,6 @@ snapshots:
       is-callable: 1.2.7
 
   functions-have-names@1.2.3: {}
-
-  g-charts@file:g-charts: {}
 
   gensync@1.0.0-beta.2: {}
 

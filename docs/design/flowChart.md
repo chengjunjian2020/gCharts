@@ -19,8 +19,8 @@ import {
   Group,
   Line,
   calcLineLength,
-} from 'g-charts/render';
-import { useResizeObserver } from 'g-charts/_hooks';
+} from 'advanced-charts/render';
+import { useResizeObserver } from 'advanced-charts/_hooks';
 
 class RectWithCircle {
   constructor(rectData: Rect['data']) {

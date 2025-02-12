@@ -19,7 +19,7 @@ order: 4
  */
 
 import { useState } from 'react'
-import { Stage, Trapezoid } from 'g-charts'
+import { Stage, Trapezoid } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(250)
@@ -69,7 +69,7 @@ export default App
 
 ```tsx | pure
 import { useState } from 'openinula'
-import { Stage, Trapezoid } from 'g-charts'
+import { Stage, Trapezoid } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(250)

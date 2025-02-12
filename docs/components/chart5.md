@@ -16,7 +16,7 @@ order: 5
 /**
  * defaultShowCode: true
  */
-import { LineChart } from 'g-charts'
+import { LineChart } from 'advanced-charts'
 
 const App = () => {
   const 聚合面积图 = {

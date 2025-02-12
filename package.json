@@ -1,6 +1,6 @@
 {
-  "name": "antd",
-  "version": "0.0.1",
+  "name": "advanced-charts",
+  "version": "1.0.0",
   "description": "A react library developed with dumi",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -62,7 +62,7 @@
     "father": "^4.1.0",
     "gh-pages": "^6.1.1",
     "husky": "^8.0.1",
-    "g-charts": "file:./g-charts",
+    "advanced-charts": "file:./advanced-charts",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-organize-imports": "^3.0.0",

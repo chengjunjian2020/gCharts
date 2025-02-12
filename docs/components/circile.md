@@ -18,7 +18,7 @@ order: 1
  * inline: true
  */
 import { useState } from 'react'
-import { Circle, Stage } from 'g-charts'
+import { Circle, Stage } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(100)
@@ -82,7 +82,7 @@ export default App
 
 ```tsx | pure
 import { useState } from 'openinula'
-import { Circle, Stage } from 'g-charts'
+import { Circle, Stage } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(100)

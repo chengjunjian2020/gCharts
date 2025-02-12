@@ -16,7 +16,7 @@ toc: content
  * inline: true
  */
 import { useState } from 'react'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(200)
@@ -67,7 +67,7 @@ export default App
 
 ```tsx | pure
 import { useState } from 'openinula'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 
 const App = () => {
   const [x, setX] = useState(200)

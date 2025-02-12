@@ -9,7 +9,7 @@ toc: content
 
 # 节点管理思路
 
-和 DOM 结构不同，`g-charts` 采用了扁平的方式管理节点。因此在大多数情况下，所有的节点都是兄弟节点的关系。在性能表现上，这种方式优势非常大。除了个别节点之外，例如 `Stage` `Group`， 其他每一个图形都是元素节点，不支持接收子元素。
+和 DOM 结构不同，`advanced-charts` 采用了扁平的方式管理节点。因此在大多数情况下，所有的节点都是兄弟节点的关系。在性能表现上，这种方式优势非常大。除了个别节点之外，例如 `Stage` `Group`， 其他每一个图形都是元素节点，不支持接收子元素。
 
 下面这种写法是不支持的。
 
@@ -35,7 +35,7 @@ function App() {
 /**
  * defaultShowCode: true
  */
-import {Stage, Group, Rect} from 'g-charts'
+import {Stage, Group, Rect} from 'advanced-charts'
 
  const App = () => {
   return (
@@ -66,7 +66,7 @@ export default App
  * inline: true
  */
 import { useRef, useState } from 'react'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 const ZIndexDemo = () => {
   const [zIndex, setZIndex] = useState(2)
 

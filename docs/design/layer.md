@@ -9,7 +9,7 @@ toc: content
 
 # zIndex 层叠顺序
 
-`g-charts` 节点之间，我们通过 `zIndex` 来管理层叠顺序。每个元素组件都支持基础属性 `zIndex`
+`advanced-charts` 节点之间，我们通过 `zIndex` 来管理层叠顺序。每个元素组件都支持基础属性 `zIndex`
 
 ```tsx | pure
 <Rect zIndex={9} />
@@ -22,7 +22,7 @@ toc: content
  * inline: true
  */
 import { useRef, useState } from 'react'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 const ZIndexDemo = () => {
   const [zIndex, setZIndex] = useState(2)
 
@@ -42,7 +42,7 @@ export default ZIndexDemo
 
 ```tsx | pure
 import { useState } from 'openinula'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 const ZIndexDemo = () => {
   const [zIndex, setZIndex] = useState(2)
 

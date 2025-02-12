@@ -18,7 +18,7 @@ order: 14
 /**
  * defaultShowCode: true
  */
-import { KLineChart } from 'g-charts'
+import { KLineChart } from 'advanced-charts'
 
 const App = () => {
   const 拖动K线图 = {

@@ -24,8 +24,8 @@ import {
   useState,
   useMemo,
 } from 'react';
-import rmstCharts from 'g-charts/core';
-import { useResizeObserver } from 'g-charts/_hooks';
+import rmstCharts from 'advanced-charts/core';
+import { useResizeObserver } from 'advanced-charts/_hooks';
 
 const Context = createContext(null);
 
@@ -151,7 +151,7 @@ function useFirstRender() {
 ```
 
 ```tsx | pure
-import { ChartStage, XAxis, LineMain } from 'g-charts';
+import { ChartStage, XAxis, LineMain } from 'advanced-charts';
 
 const mainData_1 = [620, 932, 901, 934, 800, 1001];
 const mainData_2 = [680, 232, 401, 934, 300, 101];

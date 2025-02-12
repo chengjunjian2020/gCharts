@@ -17,7 +17,7 @@ toc: content
 /**
  * defaultShowCode: true
  */
-import {Stage, Group, Rect} from 'g-charts'
+import {Stage, Group, Rect} from 'advanced-charts'
 
  const App = () => {
   return (

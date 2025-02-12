@@ -13,7 +13,7 @@ toc: content
 
 [![GitHub](https://img.shields.io/github/license/awmleer/reto.svg?logo=github)](https://github.com/awmleer/reto) 
 
-`g-charts` 是专门为前端框架 `react` 高性能图表组件库。我们支持以 JSX 的方式简单创建图形元素与图表组件。
+`advanced-charts` 是专门为前端框架 `react` 高性能图表组件库。我们支持以 JSX 的方式简单创建图形元素与图表组件。
 
 ```tsx | pure
 <Stage border="1px solid orange">
@@ -28,7 +28,7 @@ toc: content
 
 ## 安装 
 
-[![npm version](https://img.shields.io/npm/v/g-charts.svg?logo=npm)](https://www.npmjs.com/package/advanced-charts)  [![npm downloads](https://img.shields.io/npm/dw/g-charts.svg?logo=npm)](https://www.npmjs.com/package/advanced-charts)
+[![npm version](https://img.shields.io/npm/v/advanced-charts.svg?logo=npm)](https://www.npmjs.com/package/advanced-charts)  [![npm downloads](https://img.shields.io/npm/dw/advanced-charts.svg?logo=npm)](https://www.npmjs.com/package/advanced-charts)
 
 使用如下方式添加 `advanced-charts` 到你的项目
 
@@ -42,19 +42,19 @@ npm i advanced-charts
 引入项目之后，使用如下方式在代码中引入
 
 ```tsx | pure
-import { Stage, Group, Rect, Circle } from 'g-charts'
+import { Stage, Group, Rect, Circle } from 'advanced-charts'
 ```
 
 
 ## 快速上手使用
 
-`g-charts` 的使用与常规的组件使用方式一样，我们可以简单创建一个图形元素。如下案例所示
+`advanced-charts` 的使用与常规的组件使用方式一样，我们可以简单创建一个图形元素。如下案例所示
 
 ```tsx
 /**
  * defaultShowCode: true
  */
-import { Stage, Group, Rect, Circle } from 'g-charts'
+import { Stage, Group, Rect, Circle } from 'advanced-charts'
 
 function App() {
   return (
@@ -92,7 +92,7 @@ export default App
 /**
  * defaultShowCode: true
  */
-import {LineChart} from 'g-charts'
+import {LineChart} from 'advanced-charts'
 
 const options = {
   xAxis: {

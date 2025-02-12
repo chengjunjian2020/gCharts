@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Stage, Rect} from 'g-charts'
+import {Stage, Rect} from 'advanced-charts'
 
 const App = () => {
   console.log(useState)

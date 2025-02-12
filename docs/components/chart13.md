@@ -16,7 +16,7 @@ order: 13
 /**
  * defaultShowCode: true
  */
-import { KLineChart } from 'g-charts'
+import { KLineChart } from 'advanced-charts'
 
 const App = () => {
   const K线图 = {

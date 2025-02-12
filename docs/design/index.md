@@ -9,14 +9,14 @@ toc: content
 
 # Stage 舞台
 
-在 `g-charts` 中，`Stage` 元素是图形绘制的**必备顶层容器节点**，用于表示该区域为图形绘制区域。其他所有的图形组件节点都必须挂载在组件节点之下，使用方式如下。
+在 `advanced-charts` 中，`Stage` 元素是图形绘制的**必备顶层容器节点**，用于表示该区域为图形绘制区域。其他所有的图形组件节点都必须挂载在组件节点之下，使用方式如下。
 
 ```tsx
 /**
  * title: Stage 简单使用
  * defaultShowCode: true
  */
-import {Stage, Rect} from 'g-charts'
+import {Stage, Rect} from 'advanced-charts'
 
 function App() {
   return (
@@ -36,7 +36,7 @@ export default App
  * title: Stage 多个字节点
  * defaultShowCode: true
  */
-import {Stage, Rect} from 'g-charts'
+import {Stage, Rect} from 'advanced-charts'
 
 function App() {
   return (

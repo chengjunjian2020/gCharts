@@ -13,7 +13,7 @@ order: 1
 
 ```tsx | inline
 import { useState } from 'react';
-import { Circle, Group, Stage } from 'g-charts';
+import { Circle, Group, Stage } from 'advanced-charts';
 
 const App = () => {
   const [groupLog, setGroupLog] = useState('');
@@ -45,7 +45,7 @@ export default App;
 
 ```tsx | pure
 import { useState } from 'openinula';
-import { Circle, Group, Stage } from 'g-charts';
+import { Circle, Group, Stage } from 'advanced-charts';
 
 const App = () => {
   const [groupLog, setGroupLog] = useState('');

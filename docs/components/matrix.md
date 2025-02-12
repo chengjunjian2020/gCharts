@@ -10,7 +10,7 @@ order: 4
 # 矩阵变换
 
 ```tsx
-import { Rect, Stage } from 'g-charts';
+import { Rect, Stage } from 'advanced-charts';
 
 const App = () => {
   return (

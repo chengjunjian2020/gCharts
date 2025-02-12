@@ -9,7 +9,7 @@ order: 2
 
 # 图形语法
 
-`g-charts` 中，所有的图表结构，都是通过组合不同的图形语法元素得到的。因此，我们可能需要对基础图形有一个基本了解，以便于使用者基于基础图形发觉更多的使用场景。
+`advanced-charts` 中，所有的图表结构，都是通过组合不同的图形语法元素得到的。因此，我们可能需要对基础图形有一个基本了解，以便于使用者基于基础图形发觉更多的使用场景。
 
 这里就以 `Circle` 圆形为例，给大家介绍基础图形的使用
 
@@ -22,7 +22,7 @@ order: 2
 /**
  * defaultShowCode: true
  */
-import {Stage, Circle} from 'g-charts'
+import {Stage, Circle} from 'advanced-charts'
 
 function App() {
   return (
@@ -51,7 +51,7 @@ export default App;
 /**
  * defaultShowCode: true
  */
-import {Stage, Circle} from 'g-charts'
+import {Stage, Circle} from 'advanced-charts'
 
 function App() {
   return (
@@ -73,7 +73,7 @@ export default App;
 /**
  * defaultShowCode: true
  */
-import { Circle, Stage } from 'g-charts'
+import { Circle, Stage } from 'advanced-charts'
 
 const App = () => {
   return (
@@ -106,7 +106,7 @@ export default App
 
 ```tsx | pure
 import { useEffect, useState } from 'openinula'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 
 const s = { x: 0, height: 60, fillStyle: 'purple' }
 const e = { x: 200, height: 200, fillStyle: 'red' }
@@ -162,7 +162,7 @@ export default App
  * inline: true
  */
 import { useEffect, useState } from 'react'
-import { Rect, Stage } from 'g-charts'
+import { Rect, Stage } from 'advanced-charts'
 
 const s = { x: 0, height: 60, fillStyle: 'purple' }
 const e = { x: 200, height: 200, fillStyle: 'red' }

@@ -8,14 +8,14 @@ toc: content
 
 # Bubble
 
-我们写了一个 demo 来演示 `g-charts` 在性能上的优秀表现。
+我们写了一个 demo 来演示 `advanced-charts` 在性能上的优秀表现。
 
 ```tsx
 /**
  * inline: true
  */
 import { useEffect, useState } from 'react'
-import { Circle, Rect, Stage } from 'g-charts'
+import { Circle, Rect, Stage } from 'advanced-charts'
 import colorAlpha from 'color-alpha'
 
 const radius = 25
@@ -105,7 +105,7 @@ export default App
 
 ```tsx | pure
 import { useEffect, useState } from 'openinula'
-import { Circle, Rect, Stage } from 'g-charts'
+import { Circle, Rect, Stage } from 'advanced-charts'
 import colorAlpha from 'color-alpha'
 
 const radius = 25

@@ -13,7 +13,7 @@ order: 3
 
 ```tsx | pure
 import { useEffect, useState } from 'openinula';
-import { Rect, Stage } from 'g-charts';
+import { Rect, Stage } from 'advanced-charts';
 
 const s = { x: 0, height: 60, fillStyle: 'purple' };
 const e = { x: 200, height: 200, fillStyle: 'red' };
@@ -69,7 +69,7 @@ export default App;
  * inline: true
  */
 import { useEffect, useState } from 'react';
-import { Rect, Stage } from 'g-charts';
+import { Rect, Stage } from 'advanced-charts';
 
 const s = { x: 0, height: 60, fillStyle: 'purple' };
 const e = { x: 200, height: 200, fillStyle: 'red' };

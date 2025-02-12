@@ -18,7 +18,7 @@ order: 2
  * inline: true
  */
 import { useState } from 'react'
-import { Stage, DraggableLine } from 'g-charts'
+import { Stage, DraggableLine } from 'advanced-charts'
 
 const App = () => {
   const [lineWidth, setLineWidth] = useState(2)
@@ -61,7 +61,7 @@ export default App
 
 ```tsx | pure
 import { useState } from 'openinula'
-import { Stage, DraggableLine } from 'g-charts'
+import { Stage, DraggableLine } from 'advanced-charts'
 
 const App = () => {
   const [lineWidth, setLineWidth] = useState(2)
