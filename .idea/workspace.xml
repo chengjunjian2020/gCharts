@@ -5,131 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67a47d6a-19ee-4c43-8267-ce9e4904c541" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/components/BoundingBoxDemo.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/BoundingBoxDemo.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/Text.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/Text.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/animate.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/animate.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart1.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart1.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart10.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart10.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart11.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart11.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart12.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart12.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart13.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart13.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart14.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart14.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart2.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart2.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart3.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart3.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart4.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart5.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart5.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart6.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart6.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart7.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart7.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart8.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart8.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/chart9.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/chart9.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/circile.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/circile.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/curve.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/curve.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/draggable.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/draggable.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/event.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/event.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/eventBubble.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/eventBubble.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/eventHit.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/eventHit.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/line.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/matrix.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/matrix.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/sector.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/sector.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/trapezoid.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/trapezoid.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/chartJsx.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/chartJsx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/demo/checkable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/demo/checkable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/flowChart.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/flowChart.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/group.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/group.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/layer.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/layer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/queue.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/queue.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/design/zindex.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/design/zindex.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/charts.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/charts.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/createElement.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/createElement.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/perfomance/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/perfomance/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/perfomance/many.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/perfomance/many.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/BarChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/BoxHidden.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/ChartTemplate.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Circle.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Curve.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/DraggableLine.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Group.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/KLineChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Line.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/LineChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/PieChart.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Rect.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Sector.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Stage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Text.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/Trapezoid.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/_hooks.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/ChartRoot.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/SeriesMgr.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/chart/BarMain.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/chart/CandlestickMain.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/chart/LineMain.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/chart/PieMain.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/chart/_chart.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/components/assistLine.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/components/dataZoom.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/components/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/components/legend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/components/tooltip.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/constant.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/cartesian2d/calcXAxis.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/cartesian2d/calcYAxis.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/cartesian2d/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/polar/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/coordinateSystem/utils/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/style.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/type.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/utils/convert.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/utils/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/utils/废弃-domHelper.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/utils/废弃-drawHelpers.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/core/utils/废弃-utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/AbsEvent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/Draggable.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/_stage/findHover.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/_stage/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/_stage/renderUi.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/_stage/scheduler.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/_stage/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/animate/AnimatorSingle.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/animate/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/animate/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/constant.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/renderer/canvas/fillOrStroke.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/renderer/canvas/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/renderer/canvas/setPath2D.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/scheduler.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/AbstractUi.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/BoxHidden.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Circle.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Group.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Line.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Rect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Text.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/Trapezoid.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/shape/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/type.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/clipRect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/isShape.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/lineUtil/curve.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/lineUtil/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/lineUtil/straight.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/render/utils/math/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/type.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/g-charts/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.husky/commit-msg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,32 +19,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2svgqh50xScxi7VVGh8DTiOk683" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/chengjunjian/Github/keepcharts",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/chengjunjian/Github/keepcharts/node_modules/prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/chengjunjian/Github/keepcharts&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/chengjunjian/Github/keepcharts/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -180,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739341654802</updated>
-      <workItem from="1739341655921" duration="6862000" />
+      <workItem from="1739341655921" duration="8180000" />
     </task>
     <servers />
   </component>
