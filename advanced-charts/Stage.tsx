@@ -8,7 +8,7 @@ import { useResizeObserver } from './_hooks';
 import { Group as _Group, Stage as _Stage } from './render';
 
 interface StageProps extends CSSProperties {
-  children?;
+  children?: React.ReactNode;
   width?: number | string;
   height?: number;
   border?: string;
@@ -23,7 +23,7 @@ const defaultProps: StageProps = {
   margin: '0 auto',
 };
 
-export const Context = createContext<_Stage | _Group>(null);
+export const Context = createContext<_Stage | _Group | null>(null);
 
 export const Stage = (props: StageProps) => {
   const mergeProps = { ...defaultProps, ...props };

@@ -19,7 +19,7 @@ import { setCirclePath2D, setRectPath2D, setTrapezoidPath2D } from './setPath2D'
 export function drawStageShapes(stage: Stage) {
   const { ctx } = stage
   ctx.clearRect(0, 0, stage.canvasElement.width, stage.canvasElement.height)
-
+  console.log('children-->', stage.children)
   drawShapes(ctx, stage.children)
 }
 
@@ -143,7 +143,7 @@ export function sortByZIndex(root) {
 }
 
 function sortChildren(children: IShape[]) {
-  return children.toSorted((a, b) => {
+  return [...children].sort((a, b) => {
     const a_zIndex = a.data.zIndex
     const b_zIndex = b.data.zIndex
 

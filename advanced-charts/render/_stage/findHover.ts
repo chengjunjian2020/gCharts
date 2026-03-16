@@ -44,13 +44,13 @@ export function findHover_v2(ctx: CanvasRenderingContext2D, children: IShape[], 
 
   while (!ans) {
     const pps = stack.sort((a, b) => {
-      const aItem = a.at(level_index)
-      const bItem = b.at(level_index)
+      const aItem = a[level_index]
+      const bItem = b[level_index]
 
       return aItem.data.zIndex - bItem.data.zIndex
     })
 
-    const maxZIndexItem = pps.at(-1)[level_index]
+    const maxZIndexItem = pps[pps.length - 1][level_index]
 
     for (let i = 0; i < pps.length; i++) {
       const item = pps[i][level_index]
@@ -65,10 +65,9 @@ export function findHover_v2(ctx: CanvasRenderingContext2D, children: IShape[], 
       }
     }
 
-    const tempAns = pps
-      .map(item => item[level_index])
-      .toSorted((a, b) => a.data.zIndex - b.data.zIndex)
-      .at(-1)
+    const tempAnsCandidates = pps.map(item => item[level_index])
+    const sortedCandidates = [...tempAnsCandidates].sort((a, b) => a.data.zIndex - b.data.zIndex)
+    const tempAns = sortedCandidates[sortedCandidates.length - 1]
 
     if (possible.includes(tempAns)) {
       ans = tempAns
@@ -191,7 +190,7 @@ function isShapeInner(ctx: CanvasRenderingContext2D, elementItem: IShape, x: num
 
 // 废弃
 function findHover_v1_legacy(ctx: CanvasRenderingContext2D, children: IShape[], x: number, y: number) {
-  const _elements = children.toReversed()
+  const _elements = [...children].reverse()
 
   for (const elementItem of _elements) {
     if (elementItem.data.pointerEvents === 'none') {

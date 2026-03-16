@@ -1,8 +1,8 @@
 import colorAlpha from 'color-alpha'
 
 import Draggable from '../Draggable'
-import { EventParameter, Handler, eventStageList } from '../constant'
-import { findToRoot, initStage, setCanvasStyle, triggerEventHandlers, updateCanvas } from './utils'
+import { EventParameter, eventStageList } from '../constant'
+import { findToRoot, initStage, triggerEventHandlers, updateCanvas } from './utils'
 import { resetSchedulerCount } from './scheduler'
 import { findHover } from './findHover'
 import { mountStage } from './renderUi'
@@ -26,17 +26,15 @@ export class Stage extends AbsEvent {
     }
   }
 
-  option: IOption
-
+  option!: IOption
   mount(option: IOption, isHand = false) {
     this.option = option
-
     const { container } = option
     const stage = initStage(container)
 
     this.canvasElement = stage.canvasElement
     this.ctx = stage.ctx
-
+    // 初始化完成
     if (isHand) {
       this.renderStage()
     }
@@ -53,10 +51,10 @@ export class Stage extends AbsEvent {
 
   type: IShapeType = 'Stage'
 
-  canvasElement: HTMLCanvasElement
-  ctx: CanvasRenderingContext2D
+  canvasElement!: HTMLCanvasElement
+  ctx!: CanvasRenderingContext2D
 
-  declare parent: null
+  declare parent
   children: IShape[] = []
 
   draggingMgr = new Draggable()
@@ -156,10 +154,11 @@ export class Stage extends AbsEvent {
           return
         }
 
-        this.hoveredStack.toReversed().forEach(elementItem => {
+        for (let i = this.hoveredStack.length - 1; i >= 0; i--) {
+          const elementItem = this.hoveredStack[i]
           const eventParameter: EventParameter = { target: elementItem, x: evt.offsetX, y: evt.offsetY }
           triggerEventHandlers(elementItem, 'onmouseleave', eventParameter)
-        })
+        }
 
         this.hoveredStack = []
       }
@@ -232,10 +231,11 @@ export class Stage extends AbsEvent {
     } else {
       this.setCursor('default')
 
-      this.hoveredStack.toReversed().forEach(elementItem => {
+      for (let i = this.hoveredStack.length - 1; i >= 0; i--) {
+        const elementItem = this.hoveredStack[i]
         const eventParameter: EventParameter = { target: elementItem, x, y }
         triggerEventHandlers(elementItem, 'onmouseleave', eventParameter)
-      })
+      }
 
       this.hoveredStack = []
     }
@@ -259,8 +259,8 @@ export class Stage extends AbsEvent {
     this.canvasElement.style.setProperty('cursor', cursor)
   }
 
-  dirtyRectUi: Rect
-  timer
+  dirtyRectUi!: Rect
+  timer!: NodeJS.Timeout
   renderDirtyRectUi(sb: BoundingRect) {
     if (!this.dirtyRectUi) {
       this.dirtyRectUi = new Rect({

@@ -12,5 +12,5 @@
       "antd/*": ["src/*", "*"]
     }
   },
-  "include": [".dumirc.ts", "src/**/*"]
+  "include": [".dumirc.ts", "advanced-charts/**/*"]
 }
